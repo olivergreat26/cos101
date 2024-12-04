@@ -1,0 +1,40 @@
+print("A designed program to run mathematical operations")
+print("""
+    Choose an operation from the menu below:
+    A) Addition +
+    B) Subtraction -
+    C) Multiplication *
+    D) Division /
+    E) Area of a square""")
+userInput = input().lower()
+def a ():
+    num1 = float(input("Enter any number: "))
+    num2 = float(input("Enter the second number:"))
+    print(f"The result of this operation is {num1 + num2}")
+def b():
+    num1 = float(input("Enter a number:"))
+    num2 = float(input("Enter a second number:"))
+    print(f"The result of this operation is {num1 - num2}")
+def c():
+    num1 = float(input("Enter a number:"))
+    num2 = float(input("Enter a second number:"))
+    print(f"The result of this operation is {num1 * num2}")
+def d():
+    num1 = float(input("Enter a number:"))
+    num2 = float(input("Enter a number:"))
+    print(f"The result of this operation is {num1 / num2}")
+def e():
+    num1 = float(input("Enter the square length:"))
+    print(f"The area of the square is {num ** 2}m^2")
+if userInput == "a":
+    a()
+elif userInput == "b":
+    b()
+elif userInput == "c":
+    c()
+elif userInput == "d":
+    d()
+elif userInput == "e":
+    e()
+else:
+    print("Please enter a choice from the menu (A-E)")
